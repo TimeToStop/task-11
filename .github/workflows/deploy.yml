@@ -18,21 +18,20 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10
+          python-version: '3.10'
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
 
       # Шаг 3: Устанавливаем зависимости
       - name: Install Backend Dependencies
         run: |
           cd glossary-back
           python -m venv venv
-          source venv/bin/activate
           pip install -r requirements.txt
 
       # Шаг 4: Запуск FastAPI на GitHub Actions
       - name: Run FastAPI Server
         run: |
           cd glossary-back
-          source venv/bin/activate
           nohup uvicorn main:app --host 0.0.0.0 --port 8000 &
 
   build-frontend:
