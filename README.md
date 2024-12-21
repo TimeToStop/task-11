@@ -43,15 +43,15 @@
   ```bash
   docker-compose up --build
 
-  Это команда:
+Это команда:
 
-  Собирает контейнеры для backend и frontend.
-  Запускает приложение.
+Собирает контейнеры для backend и frontend.
+Запускает приложение.
 
 3. **Откройте приложение в браузере:**
 
-  Frontend (React): http://localhost:3000
-  Backend (FastAPI): http://localhost:8000/docs (документация OpenAPI).
+Frontend (React): http://localhost:3000
+Backend (FastAPI): http://localhost:8000/docs (документация OpenAPI).
 
 
 ## Application Screenshot
