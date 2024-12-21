@@ -1,0 +1,52 @@
+/* Site Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #4a90e2; /* Pleasant blue for the header background */
+  color: white; /* White text for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  position: sticky; /* Sticks at the top */
+  top: 0;
+  z-index: 1000;
+}
+
+/* Header Title */
+.header-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Buttons in Header */
+.button {
+  background-color: #27ae60;
+  color: white;
+  border: 2px solid #27ae60;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+/* Hover Effect for Buttons */
+.button:hover {
+  background-color: #219150;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Optional Focus State for Accessibility */
+.button:focus {
+  outline: 2px solid white; /* White focus ring */
+  outline-offset: 2px;
+}
