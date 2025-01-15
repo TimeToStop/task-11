@@ -1,0 +1,220 @@
+{
+  "nodes": [
+    {
+      "id": "rendering",
+      "label": "Rendering"
+    },
+    {
+      "id": "initial rendering",
+      "label": "Initial Rendering"
+    },
+    {
+      "id": "re-rendering",
+      "label": "Re-Rendering"
+    },
+    {
+      "id": "virtual dom",
+      "label": "Virtual DOM"
+    },
+    {
+      "id": "diffing algorithm",
+      "label": "Diffing Algorithm"
+    },
+    {
+      "id": "reactive updates",
+      "label": "Reactive Updates"
+    },
+    {
+      "id": "bindings",
+      "label": "Bindings"
+    },
+    {
+      "id": "state management",
+      "label": "State Management"
+    },
+    {
+      "id": "state",
+      "label": "State"
+    },
+    {
+      "id": "props",
+      "label": "Props"
+    },
+    {
+      "id": "context api (react)",
+      "label": "Context API (React)"
+    },
+    {
+      "id": "reconciliation",
+      "label": "Reconciliation"
+    },
+    {
+      "id": "hydration",
+      "label": "Hydration"
+    },
+    {
+      "id": "side-rendering",
+      "label": "Side-Rendering"
+    },
+    {
+      "id": "server-side rendering (ssr)",
+      "label": "Server-Side Rendering (SSR)"
+    },
+    {
+      "id": "client-side rendering (csr)",
+      "label": "Client-Side Rendering (CSR)"
+    },
+    {
+      "id": "time to interactive (tti)",
+      "label": "Time to Interactive (TTI)"
+    },
+    {
+      "id": "first contentful paint (fcp)",
+      "label": "First Contentful Paint (FCP)"
+    },
+    {
+      "id": "frames per second (fps)",
+      "label": "Frames Per Second (FPS)"
+    },
+    {
+      "id": "runtime overhead",
+      "label": "Runtime Overhead"
+    },
+    {
+      "id": "reactive declarations (svelte)",
+      "label": "Reactive Declarations (Svelte)"
+    },
+    {
+      "id": "performance metrics",
+      "label": "Performance Metrics"
+    }
+  ],
+  "edges": [
+    {
+      "id": "a1",
+      "source": "rendering",
+      "target": "initial rendering",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a2",
+      "source": "re-rendering",
+      "target": "rendering",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a3",
+      "source": "rendering",
+      "target": "reconciliation",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a4",
+      "source": "rendering",
+      "target": "hydration",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a5",
+      "source": "virtual dom",
+      "target": "diffing algorithm",
+      "label": "реализовано через"
+    },
+    {
+      "id": "a6",
+      "source": "reactive updates",
+      "target": "bindings",
+      "label": "работает через"
+    },
+    {
+      "id": "a7",
+      "source": "state management",
+      "target": "state",
+      "label": "включают в себя"
+    },
+    {
+      "id": "a8",
+      "source": "state management",
+      "target": "props",
+      "label": "включают в себя"
+    },
+    {
+      "id": "a9",
+      "source": "state management",
+      "target": "context api (react)",
+      "label": "включают в себя"
+    },
+    {
+      "id": "a10",
+      "source": "side-rendering",
+      "target": "server-side rendering (ssr)",
+      "label": "подразделяется на"
+    },
+    {
+      "id": "a11",
+      "source": "side-rendering",
+      "target": "client-side rendering (csr)",
+      "label": "подразделяется на"
+    },
+    {
+      "id": "a12",
+      "source": "performance metrics",
+      "target": "time to interactive (tti)",
+      "label": "измеряется через"
+    },
+    {
+      "id": "a13",
+      "source": "performance metrics",
+      "target": "first contentful paint (fcp)",
+      "label": "измеряется через"
+    },
+    {
+      "id": "a14",
+      "source": "performance metrics",
+      "target": "frames per second (fps)",
+      "label": "измеряется через"
+    },
+    {
+      "id": "a15",
+      "source": "rendering",
+      "target": "virtual dom",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a16",
+      "source": "rendering",
+      "target": "reactive updates",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a17",
+      "source": "rendering",
+      "target": "state management",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a18",
+      "source": "rendering",
+      "target": "side-rendering",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a19",
+      "source": "rendering",
+      "target": "performance metrics",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a20",
+      "source": "rendering",
+      "target": "runtime overhead",
+      "label": "включает в себя"
+    },
+    {
+      "id": "a21",
+      "source": "rendering",
+      "target": "reactive declarations (svelte)",
+      "label": "включает в себя"
+    }
+  ]
+}

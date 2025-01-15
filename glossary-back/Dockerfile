@@ -1,20 +1,14 @@
-# Используем официальный Python-образ как базовый
-FROM python:3.10-slim
+FROM node:18
 
-# Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копируем зависимости
-COPY requirements.txt .
+COPY package*.json ./
 
-# Устанавливаем зависимости
-RUN pip install --no-cache-dir -r requirements.txt
+RUN npm install
 
-# Копируем код приложения
 COPY . .
 
-# Открываем порт 8000 для FastAPI
-EXPOSE 8000
+EXPOSE 8100
 
-# Запускаем FastAPI
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["npm", "start"]
+
