@@ -27,3 +27,4 @@ export function loadDataFromFile(filename, onSuccess, onError) {
     onSuccess(JSON.parse(data));
   })
 }
+
