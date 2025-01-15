@@ -32,6 +32,7 @@ jobs:
       - name: Build and deploy React app
         run: |
           cd glossary-front
+          npm install
           npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
