@@ -23,7 +23,7 @@ jobs:
       # Step 3: Install and run Express server
       - name: Install and start Express server
         run: |
-          cd express-app
+          cd glossary-back
           npm install
           nohup npm start &
         env:
@@ -32,7 +32,7 @@ jobs:
       # Step 4: Install and run React app
       - name: Install and start React app
         run: |
-          cd react-app
+          cd glossary-front
           npm install
           nohup npm start &
         env:
