@@ -43,8 +43,8 @@ const CytoscapeGraph = ({ nodes, edges }: IMindMap) => {
       container: cyRef.current, // DOM element to render the graph
 
       elements: [
-        ... nodes.map((node: INode) => ({ data: node })),
-        ... edges.map((edge: IEdge) => ({ data: edge }))
+        ...nodes.map((node: INode) => ({ data: node })),
+        ...edges.map((edge: IEdge) => ({ data: edge }))
       ],
 
       style: [
@@ -101,7 +101,7 @@ const CytoscapeGraph = ({ nodes, edges }: IMindMap) => {
       window.removeEventListener('resize', () => handleResize(cy));
       cy.destroy();
     };
-  }, []);
+  }, [ nodes, edges ]);
 
   return (
     <div
