@@ -37,7 +37,3 @@ jobs:
           nohup npm start &
         env:
           PORT: 3000
-
-      # Step 5: Keep workflow running
-      - name: Keep jobs running
-        run: sleep 300
