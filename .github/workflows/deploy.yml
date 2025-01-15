@@ -28,12 +28,10 @@ jobs:
           nohup npm start &
         env:
           PORT: 8100
-
-      # Step 4: Install and run React app
-      - name: Install and start React app
+      
+      - name: Build and deploy React app
         run: |
           cd glossary-front
-          npm install
-          nohup npm start &
+          npm run deploy
         env:
-          PORT: 3000
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
